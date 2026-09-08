@@ -1,0 +1,162 @@
+1. CHECK EVEN OR ODD:
+n = int(input("Enter a number: "))
+if n % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+
+
+2. CHECK POSITIVE, NEGATIVE OR ZERO:
+n = int(input("Enter a number: "))
+if n > 0:
+    print("Positive")
+elif n < 0:
+    print("Negative")
+else:
+    print("Zero")
+
+
+3. FIND LARGEST OF TWO NUMBERS:
+n = int(input("Enter a number: "))
+if n > 0:
+    print("Positive")
+elif n < 0:
+    print("Negative")
+else:
+    print("Zero")
+
+
+4. FIND LARGEST OF THREE NUMBERS:
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+if a > b and a > c:
+    print("Largest =", a)
+elif b > c:
+    print("Largest =", b)
+else:
+    print("Largest =", c)
+
+
+5. FIND SMALLEST OF TWO NUMBERS:
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+if a < b:
+    print("Smallest =", a)
+else:
+    print("Smallest =", b)
+
+
+6. CHECK LEAP YEAR:
+year = int(input("Enter year: "))
+if year % 400 == 0 or year % 4 == 0 and year % 100 != 0:
+    print("Leap Year")
+else:
+    print("Not a Leap Year")
+
+
+7. CHECK VOWEL OR CONSONANT:
+ch = input("Enter a character: ")
+if ch in "aeiouAEIOU":
+    print("Vowel")
+else:
+    print("Consonant")
+
+
+8. CHECK ALPHABET, DIGIT OR SPECIAL CHARACTER:
+ch = input("Enter a character: ")
+if ch.isalpha():
+    print("Alphabet")
+elif ch.isdigit():
+    print("Digit")
+else:
+    print("Special Character")
+
+
+9. CHECK ELIGIBLE TO VOTE:
+age = int(input("Enter age: "))
+if age >= 18:
+    print("Eligible to Vote")
+else:
+    print("Not Eligible to Vote")
+
+
+10. CHECK PASS OR FAIL:
+mark = int(input("Enter mark: "))
+if mark >= 40:
+    print("Pass")
+else:
+    print("Fail")
+
+
+11. CALCULATE GRADE:
+mark = int(input("Enter mark: "))
+if mark >= 90:
+    print("Grade A")
+elif mark >= 80:
+    print("Grade B")
+elif mark >= 70:
+    print("Grade C")
+elif mark >= 60:
+    print("Grade D")
+elif mark >= 40:
+    print("Grade E")
+else:
+    print("Fail")
+
+
+12. CHECK DIVISIBILITY:
+a = int(input("Enter number: "))
+b = int(input("Enter divisor: "))
+if a % b == 0:
+    print("Divisible")
+else:
+    print("Not Divisible")
+
+
+13. FIND PROFIT OR LOSS:
+cost = float(input("Enter cost price: "))
+selling = float(input("Enter selling price: "))
+if selling > cost:
+    print("Profit =", selling - cost)
+elif cost > selling:
+    print("Loss =", cost - selling)
+else:
+    print("No Profit No Loss")
+
+
+14. CALCULATE ELECTRICITY BILL:
+units = float(input("Enter units: "))
+if units <= 100:
+    bill = units * 1.5
+elif units <= 200:
+    bill = 100 * 1.5 + (units - 100) * 2.5
+else:
+    bill = 100 * 1.5 + 100 * 2.5 + (units - 200) * 4
+print("Electricity Bill =", bill)
+
+
+15. CHECK TRIANGLE VALIDITY:
+a = int(input("Enter first side: "))
+b = int(input("Enter second side: "))
+c = int(input("Enter third side: "))
+if a + b > c and a + c > b and b + c > a:
+    print("Valid Triangle")
+else:
+    print("Invalid Triangle")
+
+
+16. FIND TYPE OF TRIANGLE:
+a = int(input("Enter first side: "))
+b = int(input("Enter second side: "))
+c = int(input("Enter third side: "))
+if a + b <= c or a + c <= b or b + c <= a:
+    print("Invalid Triangle")
+elif a == b and b == c:
+    print("Equilateral Triangle")
+elif a == b or b == c or a == c:
+    print("Isosceles Triangle")
+else:
+    print("Scalene Triangle")
+
+
