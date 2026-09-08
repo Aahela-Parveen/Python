@@ -1,0 +1,96 @@
+1. CREATE AND PRINT LIST:
+numbers = [10,20,30,40,50]
+print(numbers)
+
+
+2. FIND SUM OF LIST ELEMENTS:
+numbers = [10,20,30,40,50]
+print("Sum =",sum(numbers))
+
+
+3. FIND AVERAGE OF LIST:
+numbers = [10,20,30,40,50]
+average = sum(numbers) / len(numbers)
+print("Average =",average)
+
+
+4. FIND LARGEST ELEMENT:
+numbers = [10,20,30,40,50]
+print("Largest =",max(numbers))
+
+
+5. FIND SMALLEST ELEMENT:
+numbers = [10,20,30,40,50]
+print("Smallest =",min(numbers))
+
+
+6. FIND SECOND LARGEST ELEMENT:
+numbers = [10,20,30,40,50]
+numbers.sort()
+print("Second Largest =",numbers[-2])
+
+
+7. COUNT EVEN AND ODD ELEMENTS:
+numbers = [10,15,20,25,30]
+even = 0
+odd = 0
+for n in numbers:
+    if n % 2 == 0:
+        even = even + 1
+    else:
+        odd = odd + 1
+print("Even =",even)
+print("Odd =",odd)
+
+
+8. SEARCH AN ELEMENT:
+numbers = [10,20,30,40,50]
+n = int(input("Enter element: "))
+if n in numbers:
+    print("Element Found")
+else:
+    print("Element Not Found")
+
+
+9. REVERSE A LIST:
+numbers = [10,20,30,40,50]
+numbers.reverse()
+print(numbers)
+
+
+10. COPY A LIST:
+numbers = [10,20,30,40,50]
+new_list = numbers.copy()
+print(new_list)
+
+
+11. MERGE TWO LISTS:
+list1 = [10,20,30]
+list2 = [40,50,60]
+list3 = list1 + list2
+print(list3)
+
+
+12. SORT LIST – ASCENDING:
+numbers = [40,10,50,20,30]
+numbers.sort()
+print(numbers)
+
+
+13. SORT LIST – DESCENDING:
+numbers = [40,10,50,20,30]
+numbers.sort(reverse=True)
+print(numbers)
+
+
+14. REMOVE DUPLICATE ELEMENTS:
+numbers = [10,20,10,30,20,40]
+new_list = list(set(numbers))
+print(new_list)
+
+
+15. FIND FREQUENCY OF ELEMENTS:
+numbers = [10,20,10,30,20,10]
+for n in set(numbers):
+    print(n,"=",numbers.count(n))
+
