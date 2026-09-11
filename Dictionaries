@@ -1,0 +1,82 @@
+1. CREATE AND PRINT DICTIONARY:
+student = {"name":"Aahela","age":20,"mark":90}
+print(student)
+
+
+2. ADD DICTIONARY ELEMENTS:
+student = {"name":"Aahela","age":20}
+student["mark"] = 90
+student["city"] = "Karaikudi"
+print(student)
+
+
+3. UPDATE DICTIONARY ELEMENTS:
+student = {"name":"Aahela","age":20,"mark":90}
+student["mark"] = 95
+print(student)
+
+
+4. DELETE DICTIONARY ELEMENTS:
+student = {"name":"Aahela","age":20,"mark":90}
+del student["age"]
+print(student)
+
+
+5. ACCESS DICTIONARY VALUES:
+student = {"name":"Aahela","age":20,"mark":90}
+print("Name =",student["name"])
+print("Age =",student["age"])
+print("Mark =",student["mark"])
+
+
+6. FIND DICTIONARY LENGTH:
+student = {"name":"Aahela","age":20,"mark":90}
+print("Length =",len(student))
+
+
+7. CHECK KEY EXISTS:
+student = {"name":"Aahela","age":20,"mark":90}
+key = input("Enter key: ")
+if key in student:
+    print("Key Exists")
+else:
+    print("Key Does Not Exist")
+
+
+8. FIND MAXIMUM VALUE:
+marks = {"Math":85,"Python":95,"Java":90}
+print("Maximum =",max(marks.values()))
+
+
+9. FIND MINIMUM VALUE:
+marks = {"Math":85,"Python":95,"Java":90}
+print("Minimum =",min(marks.values()))
+
+
+10. COUNT CHARACTER FREQUENCY USING DICTIONARY:text = input("Enter a string: ")
+frequency = {}
+for ch in text:
+    frequency[ch] = frequency.get(ch,0) + 1
+print(frequency)
+
+
+
+11. STUDENT DETAILS USING DICTIONARY:
+student = {
+    "name":input("Enter name: "),
+    "age":int(input("Enter age: ")),
+    "college":input("Enter college: "),
+    "mark":int(input("Enter mark: "))
+}
+print(student)
+
+
+12. EMPLOYEE DETAILS USING DICTIONARY:
+employee = {
+    "name":input("Enter name: "),
+    "age":int(input("Enter age: ")),
+    "salary":float(input("Enter salary: ")),
+    "department":input("Enter department: ")
+}
+print(employee)
+
