@@ -1,0 +1,73 @@
+1. CREATE AND PRINT TUPLE:
+numbers = (10,20,30,40,50)
+print(numbers)
+
+
+2. FIND TUPLE LENGTH:
+numbers = (10,20,30,40,50)
+print("Length =",len(numbers))
+
+
+3. ACCESS TUPLE ELEMENTS:
+numbers = (10,20,30,40,50)
+print("First =",numbers[0])
+print("Second =",numbers[1])
+print("Third =",numbers[2])
+
+
+4. FIND MAXIMUM AND MINIMUM IN TUPLE:
+numbers = (10,20,30,40,50)
+print("Maximum =",max(numbers))
+print("Minimum =",min(numbers))
+
+
+5. CONVERT TUPLE TO LIST:
+numbers = (10,20,30,40,50)
+list1 = list(numbers)
+print(list1)
+
+
+6. CREATE AND PRINT SET:
+numbers = {10,20,30,40,50}
+print(numbers)
+
+
+7. ADD ELEMENTS TO SET:
+numbers = {10,20,30}
+numbers.add(40)
+numbers.add(50)
+print(numbers)
+
+
+8. REMOVE ELEMENTS FROM SET:
+numbers = {10,20,30,40,50}
+numbers.remove(30)
+print(numbers)
+
+
+9. UNION OF TWO SETS:
+set1 = {10,20,30}
+set2 = {30,40,50}
+print("Union =",set1.union(set2))
+
+
+10. INTERSECTION OF TWO SETS:
+set1 = {10,20,30}
+set2 = {30,40,50}
+print("Intersection =",set1.intersection(set2))
+
+
+11. DIFFERENCE OF TWO SETS:
+set1 = {10,20,30}
+set2 = {30,40,50}
+print("Difference =",set1.difference(set2))
+
+
+12. CHECK SUBSET:
+set1 = {10,20,30,40,50}
+set2 = {20,30}
+if set2.issubset(set1):
+    print("Subset")
+else:
+    print("Not a Subset")
+
